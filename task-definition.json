@@ -1,9 +1,9 @@
 {
-    "family": FAMILY,
+    "family": "nodejs-webserver",
     "containerDefinitions": [
         {
             "image": "REPOSITORY_URI:BUILD_NUMBER",
-            "name": NAME,
+            "name": "nodejs",
 	    "essential": true,
             "portMappings": [
                 {
@@ -19,5 +19,5 @@
              "FARGATE"
     ],
     "networkMode": "awsvpc",
-    "executionRoleArn": ROLE_ARN 
+    "executionRoleArn": "arn:aws:iam::783858137024:role/ecsTaskExecutionRole"
 }
