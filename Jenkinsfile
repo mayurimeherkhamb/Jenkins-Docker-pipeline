@@ -12,8 +12,8 @@ pipeline {
         IMAGE_TAG="${env.BUILD_ID}"
         //Do not edit REPOSITORY_URI.
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
-	    registryCredential = "AWS access key ID"
-	    JOB_NAME = "Jenkins-docker-pipeline"
+	    registryCredential = "AWS access key ID"   
+	    JOB_NAME = "Jenkins-pipeline-2"
 	    TEST_CONTAINER_NAME = "${JOB_NAME}-test-server"
     
 }
